@@ -13,6 +13,9 @@
         android:theme="@style/Theme.SuubiSolution"
         tools:targetApi="31">
         <activity
+            android:name=".homeActivity"
+            android:exported="false" />
+        <activity
             android:name=".savingpageAvtivity"
             android:exported="false" />
         <activity

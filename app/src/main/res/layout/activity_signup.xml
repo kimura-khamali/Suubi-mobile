@@ -51,7 +51,7 @@
         tools:layout_editor_absoluteY="218dp" />
 
     <EditText
-        android:id="@+id/phoneEditText"
+        android:id="@+id/sacco1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -65,7 +65,7 @@
         tools:layout_editor_absoluteY="385dp" />
 
     <EditText
-        android:id="@+id/phoneEditText"
+        android:id="@+id/sacco2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -80,7 +80,7 @@
 
 
     <EditText
-        android:id="@+id/phoneEditText"
+        android:id="@+id/sacco"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -94,12 +94,12 @@
         tools:layout_editor_absoluteY="465dp" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilPassword"
+        android:id="@+id/tilcoPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:passwordToggleEnabled="true"
-        tools:layout_editor_absoluteX="325dp"
-        tools:layout_editor_absoluteY="632dp">
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="641dp">
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -119,17 +119,17 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilPassword"
+        android:id="@+id/tilconPassword"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:passwordToggleEnabled="true"
-        tools:layout_editor_absoluteX="326dp"
-        tools:layout_editor_absoluteY="552dp">
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="553dp">
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputEditText
-        android:id="@+id/etconPassword"
+        android:id="@+id/etcoPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -139,8 +139,9 @@
         android:inputType="textPassword"
         android:padding="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="625dp" />
+        tools:layout_editor_absoluteY="633dp" />
 
     <Button
         android:id="@+id/login"
@@ -154,12 +155,14 @@
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
+
         android:layout_marginEnd="163dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/biperson"
         tools:layout_editor_absoluteY="80dp" />
+
+<!--    android:layout_marginStart="176dp"-->
 
     <TextView
         android:id="@+id/textView12"

@@ -15,7 +15,7 @@ class statementsActivity : AppCompatActivity() {
         binding=ActivityStatementsBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.deposit.setOnClickListener {
-            val intent = Intent(this, loans_section_Activity::class.java)
+            val intent = Intent(this, statcontActivity::class.java)
             startActivity(intent)
         }
     }

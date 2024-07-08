@@ -6,21 +6,17 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.akirachix.suubi_solution.databinding.ActivitySignupBinding
+import com.akirachix.suubi_solution.databinding.ActivityStatementsBinding
 
-class SignupActivity : AppCompatActivity() {
-    lateinit var binding: ActivitySignupBinding
+class statementsActivity : AppCompatActivity() {
+    lateinit var binding: ActivityStatementsBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivitySignupBinding.inflate(layoutInflater)
+        binding=ActivityStatementsBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.signup.setOnClickListener {
+        binding.deposit.setOnClickListener {
             val intent = Intent(this, loans_section_Activity::class.java)
             startActivity(intent)
-
         }
-//        binding.button2.setOnClickListener {
-//            validateRegistration()
     }
 }

@@ -15,8 +15,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(binding.root)
-        binding.btnNext.setOnClickListener {
-            val intent = Intent(this,homeActivity::class.java)
+        binding.suubitext.setOnClickListener {
+            val intent = Intent(this,loansActivity::class.java)
+            startActivity(intent)
         }
     }
 }

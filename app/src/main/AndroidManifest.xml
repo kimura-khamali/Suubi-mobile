@@ -13,6 +13,18 @@
         android:theme="@style/Theme.SuubiSolution"
         tools:targetApi="31">
         <activity
+            android:name=".statementsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loan_checkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loans_section_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".loansActivity"
+            android:exported="false" />
+        <activity
             android:name=".homeActivity"
             android:exported="false" />
         <activity

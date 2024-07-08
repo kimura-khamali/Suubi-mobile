@@ -1,20 +1,24 @@
 package com.akirachix.suubi_solution
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.akirachix.suubi_solution.databinding.ActivitySavingpageAvtivityBinding
+import com.akirachix.suubi_solution.databinding.ActivityStatementsBinding
 
 class savingpageAvtivity : AppCompatActivity() {
+    lateinit var binding: ActivitySavingpageAvtivityBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_savingpage_avtivity)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+       binding=ActivitySavingpageAvtivityBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.setupSavingsButton.setOnClickListener{
+            val intent = Intent(this, loans_section_Activity::class.java)
+            startActivity(intent)
         }
     }
 }

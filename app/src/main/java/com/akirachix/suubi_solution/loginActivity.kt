@@ -17,14 +17,15 @@ class loginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.checkLogin.setOnClickListener {
-            val intent = Intent(this, loans_section_Activity::class.java)
+        binding.signUpTextView.setOnClickListener {
+            val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
         }
 
-        binding.sacco.setOnClickListener {
+        binding.checkLogin.setOnClickListener {
             validateRegistration()
         }
+
     }
 
     private fun validateRegistration() {

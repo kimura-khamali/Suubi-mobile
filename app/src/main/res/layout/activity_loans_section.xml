@@ -45,7 +45,7 @@
         android:textSize="18dp"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/textlogin" />
 
     <TextView
         android:id="@+id/loan"
@@ -89,7 +89,7 @@
         app:layout_constraintTop_toBottomOf="@+id/loan" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textlogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"

@@ -114,7 +114,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
     <TextView
-        android:id="@+id/loan"
+        android:id="@+id/applyloan"
         android:layout_width="150dp"
         android:layout_height="130dp"
         android:layout_marginEnd="16dp"
@@ -151,7 +151,7 @@
         app:layout_constraintTop_toTopOf="@+id/saving" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/suubilogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -175,7 +175,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
         android:layout_marginEnd="132dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/suubilogo"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/btnNext"
         app:layout_constraintTop_toTopOf="@+id/btnNext"

@@ -11,7 +11,7 @@
 
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/suubilogo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="93dp"
@@ -33,7 +33,7 @@
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/suubilogo" />
 
         <TextView
             android:id="@+id/textView2"
@@ -56,7 +56,7 @@
             android:layout_marginTop="58dp"
             android:text="Generate"
             app:layout_constraintStart_toEndOf="@+id/textView"
-            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+            app:layout_constraintTop_toBottomOf="@+id/suubilogo" />
 
         <Button
             android:id="@+id/button2"

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:padding="16dp"
-    tools:context=".LoginActivity">
+    tools:context=".loginActivity">
 
     <ImageView
         android:id="@+id/logoImageView"
@@ -67,6 +67,8 @@
             android:background="@drawable/rounded_edittext_background"
             android:hint="@string/enter_password"
             android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             android:padding="20dp" />
     </com.google.android.material.textfield.TextInputLayout>
 

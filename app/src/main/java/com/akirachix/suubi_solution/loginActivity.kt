@@ -35,7 +35,7 @@ class loginActivity : AppCompatActivity() {
         val userName = binding.sacco.text.toString()
         if (userName.isBlank()) {
             formErr = true
-            binding.sacco.error = "Monthly Deduction is required"
+            binding.sacco.error = "Username is required"
         }
 
         val password = binding.etconPassword.text.toString()

@@ -32,8 +32,8 @@ class loginActivity : AppCompatActivity() {
         var formErr = false
         clearErrors()
 
-        val monthlyDeduction = binding.sacco.text.toString()
-        if (monthlyDeduction.isBlank()) {
+        val userName = binding.sacco.text.toString()
+        if (userName.isBlank()) {
             formErr = true
             binding.sacco.error = "Monthly Deduction is required"
         }

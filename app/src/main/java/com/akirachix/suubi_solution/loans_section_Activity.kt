@@ -18,11 +18,11 @@ class loans_section_Activity : AppCompatActivity() {
             val intent = Intent(this, loan_checkActivity::class.java)
             startActivity(intent)
         }
-            binding.states.setOnClickListener {
-                val intent = Intent(this, statementsActivity::class.java)
-                startActivity(intent)
+           binding.states.setOnClickListener {
+                val intent = Intent(this, firststatements::class.java)
+               startActivity(intent)
 
-            }
+           }
         binding.saving.setOnClickListener {
             val intent = Intent(this, savingpageAvtivity::class.java)
             startActivity(intent)

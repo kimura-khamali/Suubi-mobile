@@ -13,6 +13,21 @@
         android:theme="@style/Theme.SuubiSolution"
         tools:targetApi="31">
         <activity
+            android:name=".activity_statements"
+            android:exported="false" />
+        <activity
+            android:name=".report_layout"
+            android:exported="false" />
+        <activity
+            android:name=".statements"
+            android:exported="false" />
+        <activity
+            android:name=".firststatements"
+            android:exported="false" />
+        <activity
+            android:name=".LoanApplicattion2"
+            android:exported="false" />
+        <activity
             android:name=".applicationLoan"
             android:exported="false" />
         <activity

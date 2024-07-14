@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnSubmit" type="id" />
+    <item name="textInputEditText2" type="id" />
+    <item name="textInputEditText3" type="id" />
+    <item name="textInputEditText" type="id" />
+    <item name="backhome" type="id" />
+    <item name="textView" type="id" />
+</resources>

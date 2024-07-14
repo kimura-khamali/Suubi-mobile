@@ -81,53 +81,6 @@ class SignupActivity : AppCompatActivity() {
         }
     }
 
-//    fun validateRegistration(){
-//        var formErr=false
-//        clearErrors()
-//        val firstName=binding.emailEditText.text.toString()
-//        if(firstName.isBlank()){
-//            formErr=true
-//            binding.emailEditText.error="First name is required"
-//        }
-//
-//        val lastName=binding.sacco2.text.toString()
-//        if(lastName.isBlank()){
-//            formErr=true
-//            binding.sacco2.error="Last name is required"
-//        }
-//
-//        val Email=binding.sacco1.text.toString()
-//        if(firstName.isBlank()){
-//            formErr=true
-//            binding.sacco1.error="Email is required"
-//        }
-//
-//        val Codehive=binding.sacco.text.toString()
-//        if(firstName.isBlank()){
-//            formErr=true
-//            binding.sacco.error="Id is required"
-//        }
-//
-//
-//
-//        val password=binding.etconPassword.text.toString()
-//        if(firstName.isBlank()){
-//            formErr=true
-//            binding.etconPassword.error="Password is required"
-//        }
-//
-//        val confirm=binding.etcoPassword.text.toString()
-//        if(firstName.isBlank()){
-//            formErr=true
-//            binding.etcoPassword.error=" Confirm password"
-//        }
-//        if(password!=confirm){
-//            binding.etconPassword.error="Passwords do not match"
-//        }
-//        if(!formErr){
-//            //proceed to registration
-//        }
-//    }
 
     fun clearErrors(){
         binding.emailEditText.error=null

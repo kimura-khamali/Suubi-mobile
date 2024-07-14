@@ -7,7 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.akirachix.suubi_solution.databinding.ActivitySavingpageAvtivityBinding
-import com.akirachix.suubi_solution.databinding.ActivityStatementsBinding
+//import com.akirachix.suubi_solution.databinding.ActivityStatementsBinding
 
 class savingpageAvtivity : AppCompatActivity() {
     lateinit var binding: ActivitySavingpageAvtivityBinding

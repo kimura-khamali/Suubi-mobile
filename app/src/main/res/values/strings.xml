@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Suubi-Solution</string>
+    <string name="sign_in">Sign in</string>
+    <string name="username">username</string>
+    <string name="enter_password">Enter_password</string>
+    <string name="log_in">Log in</string>
+    <string name="continue_with_google">Continue with google</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t Have an account? Sign up</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="set_profile_picture">Set profile picture</string>
+    <string name="email">Email</string>
+    <string name="sacco_number">Sacco number</string>
+    <string name="name">Name</string>
+    <string name="monthly_deduction">Monthly Deduction</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="have_an_account_log_in">Have an account/Log In</string>
 </resources>

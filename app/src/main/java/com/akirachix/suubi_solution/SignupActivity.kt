@@ -1,20 +1,140 @@
 package com.akirachix.suubi_solution
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.akirachix.suubi_solution.databinding.ActivitySignupBinding
 
 class SignupActivity : AppCompatActivity() {
+    lateinit var binding: ActivitySignupBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_signup)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        binding = ActivitySignupBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.textlogin.setOnClickListener {
+            val intent = Intent(this, loginActivity::class.java)
+            startActivity(intent)
+
         }
+//        binding.button2.setOnClickListener {
+//            validateRegistration()
+        binding.signup.setOnClickListener {
+            validateRegistration()
+        }
+    }
+
+    fun validateRegistration() {
+        var formErr = false
+        clearErrors()
+
+        val email = binding.emailEditText.text.toString()
+        if (email.isBlank()) {
+            formErr = true
+            binding.emailEditText.error = "First name is required"
+        }
+
+        val sacco2= binding.sacco2.text.toString()
+        if (sacco2.isBlank()) {
+            formErr = true
+            binding.sacco2.error = "Last name is required"
+        }
+
+        val sacco1= binding.sacco1.text.toString()
+        if (sacco1.isBlank()) {
+            formErr = true
+            binding.sacco1.error = "Email is required"
+        } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+            formErr = true
+            binding.sacco1.error = "Invalid email format"
+        }
+
+        val sacco = binding.sacco.text.toString()
+        if (sacco.isBlank()) {
+            formErr = true
+            binding.sacco.error = "ID is required"
+        }
+
+        val password = binding.etconPassword.text.toString()
+        if (password.isBlank()) {
+            formErr = true
+            binding.etconPassword.error = "Password is required"
+        } else if (password.length < 8) {
+            formErr = true
+            binding.etconPassword.error = "Password must be at least 8 characters long"
+        }
+
+        val confirmPassword = binding.etcoPassword.text.toString()
+        if (confirmPassword.isBlank()) {
+            formErr = true
+            binding.etcoPassword.error = "Confirm password is required"
+        } else if (password != confirmPassword) {
+            formErr = true
+            binding.etcoPassword.error = "Passwords do not match"
+        }
+
+        if (!formErr) {
+            // proceed to registration
+        }
+    }
+
+//    fun validateRegistration(){
+//        var formErr=false
+//        clearErrors()
+//        val firstName=binding.emailEditText.text.toString()
+//        if(firstName.isBlank()){
+//            formErr=true
+//            binding.emailEditText.error="First name is required"
+//        }
+//
+//        val lastName=binding.sacco2.text.toString()
+//        if(lastName.isBlank()){
+//            formErr=true
+//            binding.sacco2.error="Last name is required"
+//        }
+//
+//        val Email=binding.sacco1.text.toString()
+//        if(firstName.isBlank()){
+//            formErr=true
+//            binding.sacco1.error="Email is required"
+//        }
+//
+//        val Codehive=binding.sacco.text.toString()
+//        if(firstName.isBlank()){
+//            formErr=true
+//            binding.sacco.error="Id is required"
+//        }
+//
+//
+//
+//        val password=binding.etconPassword.text.toString()
+//        if(firstName.isBlank()){
+//            formErr=true
+//            binding.etconPassword.error="Password is required"
+//        }
+//
+//        val confirm=binding.etcoPassword.text.toString()
+//        if(firstName.isBlank()){
+//            formErr=true
+//            binding.etcoPassword.error=" Confirm password"
+//        }
+//        if(password!=confirm){
+//            binding.etconPassword.error="Passwords do not match"
+//        }
+//        if(!formErr){
+//            //proceed to registration
+//        }
+//    }
+
+    fun clearErrors(){
+        binding.emailEditText.error=null
+        binding.sacco2.error=null
+        binding.sacco1.error=null
+        binding.sacco.error=null
+        binding.etcoPassword.error=null
+        binding.etconPassword.error=null
     }
 }

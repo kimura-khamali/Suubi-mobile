@@ -6,23 +6,17 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.akirachix.suubi_solution.databinding.ActivitySavingpageAvtivityBinding
-import com.akirachix.suubi_solution.databinding.ActivityStatementsBinding
+import com.akirachix.suubi_solution.databinding.ActivityOnsavingBinding
 
-class savingpageAvtivity : AppCompatActivity() {
-    lateinit var binding: ActivitySavingpageAvtivityBinding
+class onsaving : AppCompatActivity() {
+    lateinit var binding: ActivityOnsavingBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-       binding=ActivitySavingpageAvtivityBinding.inflate(layoutInflater)
+       binding=ActivityOnsavingBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.setupSavingsButton.setOnClickListener{
+        binding.setupTitle.setOnClickListener{
             val intent = Intent(this, savingcheck::class.java)
             startActivity(intent)
         }
     }
 }
-
-
-
-//
